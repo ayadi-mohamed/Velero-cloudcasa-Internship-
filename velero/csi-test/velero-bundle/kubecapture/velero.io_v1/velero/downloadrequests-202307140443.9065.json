@@ -1,0 +1,181 @@
+{
+    "apiVersion": "velero.io/v1",
+    "items": [
+        {
+            "apiVersion": "velero.io/v1",
+            "kind": "DownloadRequest",
+            "metadata": {
+                "creationTimestamp": "2023-07-14T08:33:28Z",
+                "generation": 2,
+                "managedFields": [
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:spec": {
+                                ".": {},
+                                "f:target": {
+                                    ".": {},
+                                    "f:kind": {},
+                                    "f:name": {}
+                                }
+                            },
+                            "f:status": {}
+                        },
+                        "manager": "velero",
+                        "operation": "Update",
+                        "time": "2023-07-14T08:33:28Z"
+                    },
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:downloadURL": {},
+                                "f:expiration": {},
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "velero-server",
+                        "operation": "Update",
+                        "time": "2023-07-14T08:33:28Z"
+                    }
+                ],
+                "name": "csi-restore-cliiii-28511a1d-9bcb-4258-bd18-5e12d033232a",
+                "namespace": "velero",
+                "resourceVersion": "1011000",
+                "uid": "e40327a2-159a-4a36-8eea-dc2b0684a405"
+            },
+            "spec": {
+                "target": {
+                    "kind": "RestoreResults",
+                    "name": "csi-restore-cliiii"
+                }
+            },
+            "status": {
+                "downloadURL": "http://10.108.75.155:9000/velero/restores/csi-restore-cliiii/restore-csi-restore-cliiii-results.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=minio%2F20230714%2Fminio%2Fs3%2Faws4_request\u0026X-Amz-Date=20230714T083328Z\u0026X-Amz-Expires=600\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=7f9779f9dbaffee11cdd20e35642eb7b4c4ada737633647d81965b4f1caca5ec",
+                "expiration": "2023-07-14T08:43:28Z",
+                "phase": "Processed"
+            }
+        },
+        {
+            "apiVersion": "velero.io/v1",
+            "kind": "DownloadRequest",
+            "metadata": {
+                "creationTimestamp": "2023-07-14T08:33:36Z",
+                "generation": 2,
+                "managedFields": [
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:spec": {
+                                ".": {},
+                                "f:target": {
+                                    ".": {},
+                                    "f:kind": {},
+                                    "f:name": {}
+                                }
+                            },
+                            "f:status": {}
+                        },
+                        "manager": "velero",
+                        "operation": "Update",
+                        "time": "2023-07-14T08:33:36Z"
+                    },
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:downloadURL": {},
+                                "f:expiration": {},
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "velero-server",
+                        "operation": "Update",
+                        "time": "2023-07-14T08:33:37Z"
+                    }
+                ],
+                "name": "csi-restore-cliiii-4083442d-5592-4657-ab3f-5c10dca8c826",
+                "namespace": "velero",
+                "resourceVersion": "1011022",
+                "uid": "df9a541b-363b-49b7-8c23-f097d6630ffb"
+            },
+            "spec": {
+                "target": {
+                    "kind": "RestoreLog",
+                    "name": "csi-restore-cliiii"
+                }
+            },
+            "status": {
+                "downloadURL": "http://10.108.75.155:9000/velero/restores/csi-restore-cliiii/restore-csi-restore-cliiii-logs.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=minio%2F20230714%2Fminio%2Fs3%2Faws4_request\u0026X-Amz-Date=20230714T083337Z\u0026X-Amz-Expires=600\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=979cee7b19e8f2a5da97a987b276f13b6be012d1932875b72d3dfac3ea74f38b",
+                "expiration": "2023-07-14T08:43:37Z",
+                "phase": "Processed"
+            }
+        },
+        {
+            "apiVersion": "velero.io/v1",
+            "kind": "DownloadRequest",
+            "metadata": {
+                "creationTimestamp": "2023-07-14T08:33:48Z",
+                "generation": 2,
+                "managedFields": [
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:spec": {
+                                ".": {},
+                                "f:target": {
+                                    ".": {},
+                                    "f:kind": {},
+                                    "f:name": {}
+                                }
+                            },
+                            "f:status": {}
+                        },
+                        "manager": "velero",
+                        "operation": "Update",
+                        "time": "2023-07-14T08:33:48Z"
+                    },
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:downloadURL": {},
+                                "f:expiration": {},
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "velero-server",
+                        "operation": "Update",
+                        "time": "2023-07-14T08:33:48Z"
+                    }
+                ],
+                "name": "csi-restore-cliiii-96f96ac7-53da-4d66-b878-dda1dc1d31fc",
+                "namespace": "velero",
+                "resourceVersion": "1011047",
+                "uid": "cb2a61ad-e19c-4f39-86f7-99b04bad9cc3"
+            },
+            "spec": {
+                "target": {
+                    "kind": "RestoreResults",
+                    "name": "csi-restore-cliiii"
+                }
+            },
+            "status": {
+                "downloadURL": "http://10.108.75.155:9000/velero/restores/csi-restore-cliiii/restore-csi-restore-cliiii-results.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=minio%2F20230714%2Fminio%2Fs3%2Faws4_request\u0026X-Amz-Date=20230714T083348Z\u0026X-Amz-Expires=600\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=5523e4bd35de7f1b2c05c887dc0129ee256e3435229511cf11ce6ba35168fe00",
+                "expiration": "2023-07-14T08:43:48Z",
+                "phase": "Processed"
+            }
+        }
+    ],
+    "kind": "DownloadRequestList",
+    "metadata": {
+        "continue": "",
+        "resourceVersion": "1012280"
+    }
+}

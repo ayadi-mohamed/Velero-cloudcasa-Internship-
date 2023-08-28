@@ -1,0 +1,37 @@
+apiVersion: velero.io/v1
+kind: Backup
+metadata:
+  name: backup-test-hooks-cli-2
+  namespace: velero
+spec:
+  hooks:
+    resources:
+    - excludedNamespaces: []
+      excludedResources: []
+      includedNamespaces:
+      - nginx
+      includedResources:
+      - pods
+      name: test-pre-backup-name-2
+      labelSelector:
+          matchLabels:
+              app: nginx              
+      pre:
+      - exec:
+          command:
+          - echo
+          - Hello ayadinou from  cli-test-prebackup-hooks
+          onError: Fail
+          timeout: 30s
+      post:
+      - exec:
+          command:
+          - echo
+          - Hello from ayadinou from cli-test-postbackup-hooks
+          onError: Fail
+          timeout: 30s
+  includedNamespaces:
+  - nginx
+  storageLocation: default
+  volumeSnapshotLocations:
+  - default

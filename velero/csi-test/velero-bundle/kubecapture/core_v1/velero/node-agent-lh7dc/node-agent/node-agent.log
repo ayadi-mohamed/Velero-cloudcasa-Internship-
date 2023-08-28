@@ -1,0 +1,14 @@
+time="2023-07-13T14:35:46Z" level=info msg="Setting log-level to INFO"
+time="2023-07-13T14:35:46Z" level=info msg="Starting Velero node-agent server v1.10.1 (948b3790d5577dc7e77410a8b80ef7d8a6b00303-dirty)" logSource="pkg/cmd/cli/nodeagent/server.go:85"
+1.6892589464636316e+09	INFO	controller-runtime.metrics	Metrics server is starting to listen	{"addr": ":8080"}
+time="2023-07-13T14:35:46Z" level=info msg="Starting metric server for node agent at address [:8085]" logSource="pkg/cmd/cli/nodeagent/server.go:175"
+time="2023-07-13T14:35:46Z" level=info msg="Starting controllers" logSource="pkg/cmd/cli/nodeagent/server.go:186"
+time="2023-07-13T14:35:46Z" level=info msg="Controllers starting..." logSource="pkg/cmd/cli/nodeagent/server.go:222"
+1.689258946666694e+09	INFO	Starting server	{"path": "/metrics", "kind": "metrics", "addr": "[::]:8080"}
+1.6892589466671484e+09	INFO	Starting EventSource	{"controller": "podvolumebackup", "controllerGroup": "velero.io", "controllerKind": "PodVolumeBackup", "source": "kind source: *v1.PodVolumeBackup"}
+1.6892589466672087e+09	INFO	Starting Controller	{"controller": "podvolumebackup", "controllerGroup": "velero.io", "controllerKind": "PodVolumeBackup"}
+1.6892589466693358e+09	INFO	Starting EventSource	{"controller": "podvolumerestore", "controllerGroup": "velero.io", "controllerKind": "PodVolumeRestore", "source": "kind source: *v1.PodVolumeRestore"}
+1.689258946669414e+09	INFO	Starting EventSource	{"controller": "podvolumerestore", "controllerGroup": "velero.io", "controllerKind": "PodVolumeRestore", "source": "kind source: *v1.Pod"}
+1.6892589466694365e+09	INFO	Starting Controller	{"controller": "podvolumerestore", "controllerGroup": "velero.io", "controllerKind": "PodVolumeRestore"}
+1.689258946768163e+09	INFO	Starting workers	{"controller": "podvolumebackup", "controllerGroup": "velero.io", "controllerKind": "PodVolumeBackup", "worker count": 1}
+1.6892589467705019e+09	INFO	Starting workers	{"controller": "podvolumerestore", "controllerGroup": "velero.io", "controllerKind": "PodVolumeRestore", "worker count": 1}

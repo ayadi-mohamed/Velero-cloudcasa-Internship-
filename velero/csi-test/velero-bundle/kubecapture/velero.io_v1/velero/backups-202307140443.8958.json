@@ -1,0 +1,1416 @@
+{
+    "apiVersion": "velero.io/v1",
+    "items": [
+        {
+            "apiVersion": "velero.io/v1",
+            "kind": "Backup",
+            "metadata": {
+                "annotations": {
+                    "cc-cluster-id": "64ad2266a7bc2958e2d60178",
+                    "cc-kubebackup-id": "64b06c2d840be74e87468395",
+                    "cc-kubebackup-name": "csi-backup-velero-cli",
+                    "cc-kubebackup-run-now-action": "true",
+                    "cc-kubebackup-trigger-type": "adhoc",
+                    "cc-reference-resource-group": "velero.io",
+                    "cc-reference-resource-k8s-UID": "216692df-1fb8-4e97-b200-a04add51b6f0",
+                    "cc-reference-resource-kind": "backups",
+                    "cc-reference-resource-namespace": "velero",
+                    "cc-reference-resource-version": "v1",
+                    "velero.io/source-cluster-k8s-gitversion": "v1.26.3",
+                    "velero.io/source-cluster-k8s-major-version": "1",
+                    "velero.io/source-cluster-k8s-minor-version": "26"
+                },
+                "creationTimestamp": "2023-07-13T21:58:08Z",
+                "generation": 7,
+                "labels": {
+                    "velero.io/storage-location": "default"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:cc-cluster-id": {},
+                                    "f:cc-kubebackup-id": {},
+                                    "f:cc-kubebackup-name": {},
+                                    "f:cc-kubebackup-run-now-action": {},
+                                    "f:cc-kubebackup-trigger-type": {},
+                                    "f:cc-reference-resource-group": {},
+                                    "f:cc-reference-resource-k8s-UID": {},
+                                    "f:cc-reference-resource-kind": {},
+                                    "f:cc-reference-resource-namespace": {},
+                                    "f:cc-reference-resource-version": {}
+                                }
+                            },
+                            "f:spec": {
+                                ".": {},
+                                "f:csiSnapshotTimeout": {},
+                                "f:defaultVolumesToFsBackup": {},
+                                "f:hooks": {},
+                                "f:includedNamespaces": {},
+                                "f:snapshotVolumes": {},
+                                "f:storageLocation": {},
+                                "f:ttl": {},
+                                "f:volumeSnapshotLocations": {}
+                            }
+                        },
+                        "manager": "kubeagent",
+                        "operation": "Update",
+                        "time": "2023-07-13T21:58:08Z"
+                    },
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:velero.io/source-cluster-k8s-gitversion": {},
+                                    "f:velero.io/source-cluster-k8s-major-version": {},
+                                    "f:velero.io/source-cluster-k8s-minor-version": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:velero.io/storage-location": {}
+                                }
+                            },
+                            "f:status": {
+                                ".": {},
+                                "f:completionTimestamp": {},
+                                "f:csiVolumeSnapshotsAttempted": {},
+                                "f:csiVolumeSnapshotsCompleted": {},
+                                "f:expiration": {},
+                                "f:formatVersion": {},
+                                "f:phase": {},
+                                "f:progress": {
+                                    ".": {},
+                                    "f:itemsBackedUp": {},
+                                    "f:totalItems": {}
+                                },
+                                "f:startTimestamp": {},
+                                "f:version": {}
+                            }
+                        },
+                        "manager": "velero-server",
+                        "operation": "Update",
+                        "time": "2023-07-13T21:58:22Z"
+                    }
+                ],
+                "name": "cc-csi-backup-velero-cli--37451078-1470-487c-8d88-410e04bba35b",
+                "namespace": "velero",
+                "resourceVersion": "936526",
+                "uid": "e1a873f2-458c-4e94-b6b7-287cc8245476"
+            },
+            "spec": {
+                "csiSnapshotTimeout": "10m0s",
+                "defaultVolumesToFsBackup": false,
+                "hooks": {},
+                "includedNamespaces": [
+                    "nginx-csi-test"
+                ],
+                "snapshotVolumes": true,
+                "storageLocation": "default",
+                "ttl": "168h00m00s",
+                "volumeSnapshotLocations": [
+                    "default"
+                ]
+            },
+            "status": {
+                "completionTimestamp": "2023-07-13T21:58:21Z",
+                "csiVolumeSnapshotsAttempted": 2,
+                "csiVolumeSnapshotsCompleted": 2,
+                "expiration": "2023-07-20T21:58:08Z",
+                "formatVersion": "1.1.0",
+                "phase": "Completed",
+                "progress": {
+                    "itemsBackedUp": 31,
+                    "totalItems": 31
+                },
+                "startTimestamp": "2023-07-13T21:58:08Z",
+                "version": 1
+            }
+        },
+        {
+            "apiVersion": "velero.io/v1",
+            "kind": "Backup",
+            "metadata": {
+                "annotations": {
+                    "cc-cluster-id": "64ad2266a7bc2958e2d60178",
+                    "cc-kubebackup-id": "64b013d794357938d7e6c449",
+                    "cc-kubebackup-name": "nginx-snapshot-test",
+                    "cc-kubebackup-run-now-action": "true",
+                    "cc-kubebackup-trigger-type": "adhoc",
+                    "cc-reference-resource-group": "velero.io",
+                    "cc-reference-resource-k8s-UID": "58e6c09f-78f7-4eca-b7a6-1c25105d4bfd",
+                    "cc-reference-resource-kind": "backups",
+                    "cc-reference-resource-namespace": "velero",
+                    "cc-reference-resource-version": "v1",
+                    "velero.io/source-cluster-k8s-gitversion": "v1.26.3",
+                    "velero.io/source-cluster-k8s-major-version": "1",
+                    "velero.io/source-cluster-k8s-minor-version": "26"
+                },
+                "creationTimestamp": "2023-07-13T15:17:29Z",
+                "generation": 5,
+                "labels": {
+                    "velero.io/storage-location": "default"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:cc-cluster-id": {},
+                                    "f:cc-kubebackup-id": {},
+                                    "f:cc-kubebackup-name": {},
+                                    "f:cc-kubebackup-run-now-action": {},
+                                    "f:cc-kubebackup-trigger-type": {},
+                                    "f:cc-reference-resource-group": {},
+                                    "f:cc-reference-resource-k8s-UID": {},
+                                    "f:cc-reference-resource-kind": {},
+                                    "f:cc-reference-resource-namespace": {},
+                                    "f:cc-reference-resource-version": {}
+                                }
+                            },
+                            "f:spec": {
+                                ".": {},
+                                "f:csiSnapshotTimeout": {},
+                                "f:defaultVolumesToFsBackup": {},
+                                "f:excludedNamespaces": {},
+                                "f:includedNamespaces": {},
+                                "f:snapshotVolumes": {},
+                                "f:storageLocation": {},
+                                "f:ttl": {},
+                                "f:volumeSnapshotLocations": {}
+                            }
+                        },
+                        "manager": "kubeagent",
+                        "operation": "Update",
+                        "time": "2023-07-13T15:17:29Z"
+                    },
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:velero.io/source-cluster-k8s-gitversion": {},
+                                    "f:velero.io/source-cluster-k8s-major-version": {},
+                                    "f:velero.io/source-cluster-k8s-minor-version": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:velero.io/storage-location": {}
+                                }
+                            },
+                            "f:status": {
+                                ".": {},
+                                "f:completionTimestamp": {},
+                                "f:errors": {},
+                                "f:expiration": {},
+                                "f:formatVersion": {},
+                                "f:phase": {},
+                                "f:progress": {
+                                    ".": {},
+                                    "f:itemsBackedUp": {},
+                                    "f:totalItems": {}
+                                },
+                                "f:startTimestamp": {},
+                                "f:version": {}
+                            }
+                        },
+                        "manager": "velero-server",
+                        "operation": "Update",
+                        "time": "2023-07-13T15:17:32Z"
+                    }
+                ],
+                "name": "cc-nginx-snapshot-test--f4eb81db-ff53-4ac6-b895-e4abac163d49",
+                "namespace": "velero",
+                "resourceVersion": "889998",
+                "uid": "1bf7bd74-8f0d-4d1a-8d14-2f174da86aa3"
+            },
+            "spec": {
+                "csiSnapshotTimeout": "10m0s",
+                "defaultVolumesToFsBackup": false,
+                "excludedNamespaces": [
+                    "cloudcasa-io"
+                ],
+                "includedNamespaces": [
+                    "nginx-csi-test"
+                ],
+                "snapshotVolumes": true,
+                "storageLocation": "default",
+                "ttl": "168h00m00s",
+                "volumeSnapshotLocations": [
+                    "default"
+                ]
+            },
+            "status": {
+                "completionTimestamp": "2023-07-13T15:17:31Z",
+                "errors": 2,
+                "expiration": "2023-07-20T15:17:29Z",
+                "formatVersion": "1.1.0",
+                "phase": "PartiallyFailed",
+                "progress": {
+                    "itemsBackedUp": 35,
+                    "totalItems": 35
+                },
+                "startTimestamp": "2023-07-13T15:17:29Z",
+                "version": 1
+            }
+        },
+        {
+            "apiVersion": "velero.io/v1",
+            "kind": "Backup",
+            "metadata": {
+                "annotations": {
+                    "cc-cluster-id": "64ad2266a7bc2958e2d60178",
+                    "cc-kubebackup-id": "64b06b14c6956dcefdf219c0",
+                    "cc-kubebackup-name": "csi-backup-ui",
+                    "cc-reference-resource-namespace": "velero",
+                    "velero.io/source-cluster-k8s-gitversion": "v1.26.3",
+                    "velero.io/source-cluster-k8s-major-version": "1",
+                    "velero.io/source-cluster-k8s-minor-version": "26"
+                },
+                "creationTimestamp": "2023-07-13T21:22:28Z",
+                "generation": 6,
+                "labels": {
+                    "velero.io/storage-location": "default"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:cc-cluster-id": {},
+                                    "f:cc-kubebackup-id": {},
+                                    "f:cc-kubebackup-name": {},
+                                    "f:cc-reference-resource-namespace": {}
+                                }
+                            },
+                            "f:spec": {
+                                ".": {},
+                                "f:excludedNamespaces": {},
+                                "f:includedNamespaces": {},
+                                "f:snapshotVolumes": {},
+                                "f:storageLocation": {},
+                                "f:volumeSnapshotLocations": {}
+                            }
+                        },
+                        "manager": "kubeagent",
+                        "operation": "Update",
+                        "time": "2023-07-13T21:22:28Z"
+                    },
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:velero.io/source-cluster-k8s-gitversion": {},
+                                    "f:velero.io/source-cluster-k8s-major-version": {},
+                                    "f:velero.io/source-cluster-k8s-minor-version": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:velero.io/storage-location": {}
+                                }
+                            },
+                            "f:spec": {
+                                "f:csiSnapshotTimeout": {},
+                                "f:defaultVolumesToFsBackup": {},
+                                "f:ttl": {}
+                            },
+                            "f:status": {
+                                ".": {},
+                                "f:completionTimestamp": {},
+                                "f:csiVolumeSnapshotsAttempted": {},
+                                "f:csiVolumeSnapshotsCompleted": {},
+                                "f:expiration": {},
+                                "f:formatVersion": {},
+                                "f:phase": {},
+                                "f:progress": {
+                                    ".": {},
+                                    "f:itemsBackedUp": {},
+                                    "f:totalItems": {}
+                                },
+                                "f:startTimestamp": {},
+                                "f:version": {}
+                            }
+                        },
+                        "manager": "velero-server",
+                        "operation": "Update",
+                        "time": "2023-07-13T21:22:41Z"
+                    }
+                ],
+                "name": "csi-backup-ui",
+                "namespace": "velero",
+                "resourceVersion": "932297",
+                "uid": "5216d395-5220-4eef-ba16-2f88d7ceba34"
+            },
+            "spec": {
+                "csiSnapshotTimeout": "10m0s",
+                "defaultVolumesToFsBackup": false,
+                "excludedNamespaces": [
+                    "cloudcasa-io"
+                ],
+                "includedNamespaces": [
+                    "nginx-csi-test"
+                ],
+                "snapshotVolumes": true,
+                "storageLocation": "default",
+                "ttl": "720h0m0s",
+                "volumeSnapshotLocations": [
+                    "default"
+                ]
+            },
+            "status": {
+                "completionTimestamp": "2023-07-13T21:22:41Z",
+                "csiVolumeSnapshotsAttempted": 2,
+                "csiVolumeSnapshotsCompleted": 2,
+                "expiration": "2023-08-12T21:22:28Z",
+                "formatVersion": "1.1.0",
+                "phase": "Completed",
+                "progress": {
+                    "itemsBackedUp": 19,
+                    "totalItems": 19
+                },
+                "startTimestamp": "2023-07-13T21:22:28Z",
+                "version": 1
+            }
+        },
+        {
+            "apiVersion": "velero.io/v1",
+            "kind": "Backup",
+            "metadata": {
+                "annotations": {
+                    "velero.io/source-cluster-k8s-gitversion": "v1.26.3",
+                    "velero.io/source-cluster-k8s-major-version": "1",
+                    "velero.io/source-cluster-k8s-minor-version": "26"
+                },
+                "creationTimestamp": "2023-07-13T21:26:54Z",
+                "generation": 6,
+                "labels": {
+                    "velero.io/storage-location": "default"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:spec": {
+                                ".": {},
+                                "f:hooks": {},
+                                "f:includedNamespaces": {},
+                                "f:metadata": {},
+                                "f:snapshotVolumes": {}
+                            },
+                            "f:status": {}
+                        },
+                        "manager": "velero",
+                        "operation": "Update",
+                        "time": "2023-07-13T21:26:54Z"
+                    },
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:velero.io/source-cluster-k8s-gitversion": {},
+                                    "f:velero.io/source-cluster-k8s-major-version": {},
+                                    "f:velero.io/source-cluster-k8s-minor-version": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:velero.io/storage-location": {}
+                                }
+                            },
+                            "f:spec": {
+                                "f:csiSnapshotTimeout": {},
+                                "f:defaultVolumesToFsBackup": {},
+                                "f:storageLocation": {},
+                                "f:ttl": {},
+                                "f:volumeSnapshotLocations": {}
+                            },
+                            "f:status": {
+                                "f:completionTimestamp": {},
+                                "f:csiVolumeSnapshotsAttempted": {},
+                                "f:csiVolumeSnapshotsCompleted": {},
+                                "f:expiration": {},
+                                "f:formatVersion": {},
+                                "f:phase": {},
+                                "f:progress": {
+                                    ".": {},
+                                    "f:itemsBackedUp": {},
+                                    "f:totalItems": {}
+                                },
+                                "f:startTimestamp": {},
+                                "f:version": {}
+                            }
+                        },
+                        "manager": "velero-server",
+                        "operation": "Update",
+                        "time": "2023-07-13T21:27:08Z"
+                    }
+                ],
+                "name": "csi-backup-velero-cli",
+                "namespace": "velero",
+                "resourceVersion": "932863",
+                "uid": "216692df-1fb8-4e97-b200-a04add51b6f0"
+            },
+            "spec": {
+                "csiSnapshotTimeout": "10m0s",
+                "defaultVolumesToFsBackup": false,
+                "hooks": {},
+                "includedNamespaces": [
+                    "nginx-csi-test"
+                ],
+                "metadata": {},
+                "snapshotVolumes": true,
+                "storageLocation": "default",
+                "ttl": "720h0m0s",
+                "volumeSnapshotLocations": [
+                    "default"
+                ]
+            },
+            "status": {
+                "completionTimestamp": "2023-07-13T21:27:08Z",
+                "csiVolumeSnapshotsAttempted": 2,
+                "csiVolumeSnapshotsCompleted": 2,
+                "expiration": "2023-08-12T21:26:54Z",
+                "formatVersion": "1.1.0",
+                "phase": "Completed",
+                "progress": {
+                    "itemsBackedUp": 25,
+                    "totalItems": 25
+                },
+                "startTimestamp": "2023-07-13T21:26:54Z",
+                "version": 1
+            }
+        },
+        {
+            "apiVersion": "velero.io/v1",
+            "kind": "Backup",
+            "metadata": {
+                "annotations": {
+                    "cc-cluster-id": "64ad2266a7bc2958e2d60178",
+                    "cc-kubebackup-id": "64b06a0f1004c94f5124fbf1",
+                    "cc-kubebackup-name": "csi-snapshot-backup",
+                    "cc-reference-resource-namespace": "velero",
+                    "velero.io/source-cluster-k8s-gitversion": "v1.26.3",
+                    "velero.io/source-cluster-k8s-major-version": "1",
+                    "velero.io/source-cluster-k8s-minor-version": "26"
+                },
+                "creationTimestamp": "2023-07-13T21:18:07Z",
+                "generation": 6,
+                "labels": {
+                    "velero.io/storage-location": "default"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:cc-cluster-id": {},
+                                    "f:cc-kubebackup-id": {},
+                                    "f:cc-kubebackup-name": {},
+                                    "f:cc-reference-resource-namespace": {}
+                                }
+                            },
+                            "f:spec": {
+                                ".": {},
+                                "f:excludedNamespaces": {},
+                                "f:includedNamespaces": {},
+                                "f:snapshotVolumes": {},
+                                "f:storageLocation": {},
+                                "f:volumeSnapshotLocations": {}
+                            }
+                        },
+                        "manager": "kubeagent",
+                        "operation": "Update",
+                        "time": "2023-07-13T21:18:07Z"
+                    },
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:velero.io/source-cluster-k8s-gitversion": {},
+                                    "f:velero.io/source-cluster-k8s-major-version": {},
+                                    "f:velero.io/source-cluster-k8s-minor-version": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:velero.io/storage-location": {}
+                                }
+                            },
+                            "f:spec": {
+                                "f:csiSnapshotTimeout": {},
+                                "f:defaultVolumesToFsBackup": {},
+                                "f:ttl": {}
+                            },
+                            "f:status": {
+                                ".": {},
+                                "f:completionTimestamp": {},
+                                "f:expiration": {},
+                                "f:formatVersion": {},
+                                "f:phase": {},
+                                "f:progress": {
+                                    ".": {},
+                                    "f:itemsBackedUp": {},
+                                    "f:totalItems": {}
+                                },
+                                "f:startTimestamp": {},
+                                "f:version": {}
+                            }
+                        },
+                        "manager": "velero-server",
+                        "operation": "Update",
+                        "time": "2023-07-13T21:18:16Z"
+                    }
+                ],
+                "name": "csi-snapshot-backup",
+                "namespace": "velero",
+                "resourceVersion": "931733",
+                "uid": "0570d873-7255-46f0-9b34-49c2cb35acf7"
+            },
+            "spec": {
+                "csiSnapshotTimeout": "10m0s",
+                "defaultVolumesToFsBackup": false,
+                "excludedNamespaces": [
+                    "cloudcasa-io"
+                ],
+                "includedNamespaces": [
+                    "database-application",
+                    "database-auth",
+                    "database-offer"
+                ],
+                "snapshotVolumes": true,
+                "storageLocation": "default",
+                "ttl": "720h0m0s",
+                "volumeSnapshotLocations": [
+                    "default"
+                ]
+            },
+            "status": {
+                "completionTimestamp": "2023-07-13T21:18:15Z",
+                "expiration": "2023-08-12T21:18:07Z",
+                "formatVersion": "1.1.0",
+                "phase": "Completed",
+                "progress": {
+                    "itemsBackedUp": 78,
+                    "totalItems": 78
+                },
+                "startTimestamp": "2023-07-13T21:18:07Z",
+                "version": 1
+            }
+        },
+        {
+            "apiVersion": "velero.io/v1",
+            "kind": "Backup",
+            "metadata": {
+                "annotations": {
+                    "cc-cluster-id": "64ad2266a7bc2958e2d60178",
+                    "cc-kubebackup-id": "64b013d794357938d7e6c449",
+                    "cc-kubebackup-name": "nginx-snapshot-test",
+                    "cc-reference-resource-namespace": "velero",
+                    "velero.io/source-cluster-k8s-gitversion": "v1.26.3",
+                    "velero.io/source-cluster-k8s-major-version": "1",
+                    "velero.io/source-cluster-k8s-minor-version": "26"
+                },
+                "creationTimestamp": "2023-07-13T15:10:15Z",
+                "generation": 5,
+                "labels": {
+                    "velero.io/storage-location": "default"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:cc-cluster-id": {},
+                                    "f:cc-kubebackup-id": {},
+                                    "f:cc-kubebackup-name": {},
+                                    "f:cc-reference-resource-namespace": {}
+                                }
+                            },
+                            "f:spec": {
+                                ".": {},
+                                "f:excludedNamespaces": {},
+                                "f:includedNamespaces": {},
+                                "f:snapshotVolumes": {},
+                                "f:storageLocation": {},
+                                "f:volumeSnapshotLocations": {}
+                            }
+                        },
+                        "manager": "kubeagent",
+                        "operation": "Update",
+                        "time": "2023-07-13T15:10:15Z"
+                    },
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:velero.io/source-cluster-k8s-gitversion": {},
+                                    "f:velero.io/source-cluster-k8s-major-version": {},
+                                    "f:velero.io/source-cluster-k8s-minor-version": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:velero.io/storage-location": {}
+                                }
+                            },
+                            "f:spec": {
+                                "f:csiSnapshotTimeout": {},
+                                "f:defaultVolumesToFsBackup": {},
+                                "f:ttl": {}
+                            },
+                            "f:status": {
+                                ".": {},
+                                "f:completionTimestamp": {},
+                                "f:errors": {},
+                                "f:expiration": {},
+                                "f:formatVersion": {},
+                                "f:phase": {},
+                                "f:progress": {
+                                    ".": {},
+                                    "f:itemsBackedUp": {},
+                                    "f:totalItems": {}
+                                },
+                                "f:startTimestamp": {},
+                                "f:version": {}
+                            }
+                        },
+                        "manager": "velero-server",
+                        "operation": "Update",
+                        "time": "2023-07-13T15:10:18Z"
+                    }
+                ],
+                "name": "nginx-snapshot-test",
+                "namespace": "velero",
+                "resourceVersion": "889157",
+                "uid": "58e6c09f-78f7-4eca-b7a6-1c25105d4bfd"
+            },
+            "spec": {
+                "csiSnapshotTimeout": "10m0s",
+                "defaultVolumesToFsBackup": false,
+                "excludedNamespaces": [
+                    "cloudcasa-io"
+                ],
+                "includedNamespaces": [
+                    "nginx-csi-test"
+                ],
+                "snapshotVolumes": true,
+                "storageLocation": "default",
+                "ttl": "720h0m0s",
+                "volumeSnapshotLocations": [
+                    "default"
+                ]
+            },
+            "status": {
+                "completionTimestamp": "2023-07-13T15:10:17Z",
+                "errors": 2,
+                "expiration": "2023-08-12T15:10:15Z",
+                "formatVersion": "1.1.0",
+                "phase": "PartiallyFailed",
+                "progress": {
+                    "itemsBackedUp": 35,
+                    "totalItems": 35
+                },
+                "startTimestamp": "2023-07-13T15:10:15Z",
+                "version": 1
+            }
+        },
+        {
+            "apiVersion": "velero.io/v1",
+            "kind": "Backup",
+            "metadata": {
+                "annotations": {
+                    "velero.io/source-cluster-k8s-gitversion": "v1.26.3",
+                    "velero.io/source-cluster-k8s-major-version": "1",
+                    "velero.io/source-cluster-k8s-minor-version": "26"
+                },
+                "creationTimestamp": "2023-07-13T15:34:20Z",
+                "generation": 5,
+                "labels": {
+                    "velero.io/storage-location": "default"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:spec": {
+                                ".": {},
+                                "f:hooks": {},
+                                "f:includedNamespaces": {},
+                                "f:metadata": {},
+                                "f:snapshotVolumes": {}
+                            },
+                            "f:status": {}
+                        },
+                        "manager": "velero",
+                        "operation": "Update",
+                        "time": "2023-07-13T15:34:20Z"
+                    },
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:velero.io/source-cluster-k8s-gitversion": {},
+                                    "f:velero.io/source-cluster-k8s-major-version": {},
+                                    "f:velero.io/source-cluster-k8s-minor-version": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:velero.io/storage-location": {}
+                                }
+                            },
+                            "f:spec": {
+                                "f:csiSnapshotTimeout": {},
+                                "f:defaultVolumesToFsBackup": {},
+                                "f:storageLocation": {},
+                                "f:ttl": {},
+                                "f:volumeSnapshotLocations": {}
+                            },
+                            "f:status": {
+                                "f:completionTimestamp": {},
+                                "f:errors": {},
+                                "f:expiration": {},
+                                "f:formatVersion": {},
+                                "f:phase": {},
+                                "f:progress": {
+                                    ".": {},
+                                    "f:itemsBackedUp": {},
+                                    "f:totalItems": {}
+                                },
+                                "f:startTimestamp": {},
+                                "f:version": {}
+                            }
+                        },
+                        "manager": "velero-server",
+                        "operation": "Update",
+                        "time": "2023-07-13T15:34:21Z"
+                    }
+                ],
+                "name": "test-s",
+                "namespace": "velero",
+                "resourceVersion": "891950",
+                "uid": "e6759944-b6f6-41e0-9c0c-d3e05759544d"
+            },
+            "spec": {
+                "csiSnapshotTimeout": "10m0s",
+                "defaultVolumesToFsBackup": false,
+                "hooks": {},
+                "includedNamespaces": [
+                    "nginx-snapshot-test"
+                ],
+                "metadata": {},
+                "snapshotVolumes": true,
+                "storageLocation": "default",
+                "ttl": "720h0m0s",
+                "volumeSnapshotLocations": [
+                    "default"
+                ]
+            },
+            "status": {
+                "completionTimestamp": "2023-07-13T15:34:21Z",
+                "errors": 1,
+                "expiration": "2023-08-12T15:34:20Z",
+                "formatVersion": "1.1.0",
+                "phase": "PartiallyFailed",
+                "progress": {
+                    "itemsBackedUp": 0,
+                    "totalItems": 0
+                },
+                "startTimestamp": "2023-07-13T15:34:20Z",
+                "version": 1
+            }
+        },
+        {
+            "apiVersion": "velero.io/v1",
+            "kind": "Backup",
+            "metadata": {
+                "annotations": {
+                    "velero.io/source-cluster-k8s-gitversion": "v1.26.3",
+                    "velero.io/source-cluster-k8s-major-version": "1",
+                    "velero.io/source-cluster-k8s-minor-version": "26"
+                },
+                "creationTimestamp": "2023-07-13T15:38:43Z",
+                "generation": 5,
+                "labels": {
+                    "velero.io/storage-location": "default"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:spec": {
+                                ".": {},
+                                "f:hooks": {},
+                                "f:includedNamespaces": {},
+                                "f:metadata": {},
+                                "f:snapshotVolumes": {}
+                            },
+                            "f:status": {}
+                        },
+                        "manager": "velero",
+                        "operation": "Update",
+                        "time": "2023-07-13T15:38:43Z"
+                    },
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:velero.io/source-cluster-k8s-gitversion": {},
+                                    "f:velero.io/source-cluster-k8s-major-version": {},
+                                    "f:velero.io/source-cluster-k8s-minor-version": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:velero.io/storage-location": {}
+                                }
+                            },
+                            "f:spec": {
+                                "f:csiSnapshotTimeout": {},
+                                "f:defaultVolumesToFsBackup": {},
+                                "f:storageLocation": {},
+                                "f:ttl": {},
+                                "f:volumeSnapshotLocations": {}
+                            },
+                            "f:status": {
+                                "f:completionTimestamp": {},
+                                "f:errors": {},
+                                "f:expiration": {},
+                                "f:formatVersion": {},
+                                "f:phase": {},
+                                "f:progress": {
+                                    ".": {},
+                                    "f:itemsBackedUp": {},
+                                    "f:totalItems": {}
+                                },
+                                "f:startTimestamp": {},
+                                "f:version": {}
+                            }
+                        },
+                        "manager": "velero-server",
+                        "operation": "Update",
+                        "time": "2023-07-13T15:38:44Z"
+                    }
+                ],
+                "name": "test-sss",
+                "namespace": "velero",
+                "resourceVersion": "892467",
+                "uid": "b68cb096-4ec9-45aa-9a3f-9bc69880d8c0"
+            },
+            "spec": {
+                "csiSnapshotTimeout": "10m0s",
+                "defaultVolumesToFsBackup": false,
+                "hooks": {},
+                "includedNamespaces": [
+                    "nginx-snapshot-test"
+                ],
+                "metadata": {},
+                "snapshotVolumes": true,
+                "storageLocation": "default",
+                "ttl": "720h0m0s",
+                "volumeSnapshotLocations": [
+                    "default"
+                ]
+            },
+            "status": {
+                "completionTimestamp": "2023-07-13T15:38:44Z",
+                "errors": 1,
+                "expiration": "2023-08-12T15:38:43Z",
+                "formatVersion": "1.1.0",
+                "phase": "PartiallyFailed",
+                "progress": {
+                    "itemsBackedUp": 0,
+                    "totalItems": 0
+                },
+                "startTimestamp": "2023-07-13T15:38:43Z",
+                "version": 1
+            }
+        },
+        {
+            "apiVersion": "velero.io/v1",
+            "kind": "Backup",
+            "metadata": {
+                "annotations": {
+                    "velero.io/source-cluster-k8s-gitversion": "v1.26.3",
+                    "velero.io/source-cluster-k8s-major-version": "1",
+                    "velero.io/source-cluster-k8s-minor-version": "26"
+                },
+                "creationTimestamp": "2023-07-13T15:45:39Z",
+                "generation": 5,
+                "labels": {
+                    "velero.io/storage-location": "default"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:spec": {
+                                ".": {},
+                                "f:hooks": {},
+                                "f:includedNamespaces": {},
+                                "f:metadata": {},
+                                "f:snapshotVolumes": {}
+                            },
+                            "f:status": {}
+                        },
+                        "manager": "velero",
+                        "operation": "Update",
+                        "time": "2023-07-13T15:45:39Z"
+                    },
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:velero.io/source-cluster-k8s-gitversion": {},
+                                    "f:velero.io/source-cluster-k8s-major-version": {},
+                                    "f:velero.io/source-cluster-k8s-minor-version": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:velero.io/storage-location": {}
+                                }
+                            },
+                            "f:spec": {
+                                "f:csiSnapshotTimeout": {},
+                                "f:defaultVolumesToFsBackup": {},
+                                "f:storageLocation": {},
+                                "f:ttl": {},
+                                "f:volumeSnapshotLocations": {}
+                            },
+                            "f:status": {
+                                "f:completionTimestamp": {},
+                                "f:errors": {},
+                                "f:expiration": {},
+                                "f:formatVersion": {},
+                                "f:phase": {},
+                                "f:progress": {
+                                    ".": {},
+                                    "f:itemsBackedUp": {},
+                                    "f:totalItems": {}
+                                },
+                                "f:startTimestamp": {},
+                                "f:version": {}
+                            }
+                        },
+                        "manager": "velero-server",
+                        "operation": "Update",
+                        "time": "2023-07-13T15:45:40Z"
+                    }
+                ],
+                "name": "test-sss-o5er-mera",
+                "namespace": "velero",
+                "resourceVersion": "893275",
+                "uid": "18d15c60-30d7-4035-b688-a677b273e83a"
+            },
+            "spec": {
+                "csiSnapshotTimeout": "10m0s",
+                "defaultVolumesToFsBackup": false,
+                "hooks": {},
+                "includedNamespaces": [
+                    "nginx-snapshot-test"
+                ],
+                "metadata": {},
+                "snapshotVolumes": true,
+                "storageLocation": "default",
+                "ttl": "720h0m0s",
+                "volumeSnapshotLocations": [
+                    "default"
+                ]
+            },
+            "status": {
+                "completionTimestamp": "2023-07-13T15:45:40Z",
+                "errors": 1,
+                "expiration": "2023-08-12T15:45:39Z",
+                "formatVersion": "1.1.0",
+                "phase": "PartiallyFailed",
+                "progress": {
+                    "itemsBackedUp": 0,
+                    "totalItems": 0
+                },
+                "startTimestamp": "2023-07-13T15:45:39Z",
+                "version": 1
+            }
+        },
+        {
+            "apiVersion": "velero.io/v1",
+            "kind": "Backup",
+            "metadata": {
+                "annotations": {
+                    "velero.io/source-cluster-k8s-gitversion": "v1.26.3",
+                    "velero.io/source-cluster-k8s-major-version": "1",
+                    "velero.io/source-cluster-k8s-minor-version": "26"
+                },
+                "creationTimestamp": "2023-07-13T15:47:27Z",
+                "generation": 5,
+                "labels": {
+                    "velero.io/storage-location": "default"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:spec": {
+                                ".": {},
+                                "f:hooks": {},
+                                "f:includedNamespaces": {},
+                                "f:metadata": {},
+                                "f:snapshotVolumes": {}
+                            },
+                            "f:status": {}
+                        },
+                        "manager": "velero",
+                        "operation": "Update",
+                        "time": "2023-07-13T15:47:27Z"
+                    },
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:velero.io/source-cluster-k8s-gitversion": {},
+                                    "f:velero.io/source-cluster-k8s-major-version": {},
+                                    "f:velero.io/source-cluster-k8s-minor-version": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:velero.io/storage-location": {}
+                                }
+                            },
+                            "f:spec": {
+                                "f:csiSnapshotTimeout": {},
+                                "f:defaultVolumesToFsBackup": {},
+                                "f:storageLocation": {},
+                                "f:ttl": {},
+                                "f:volumeSnapshotLocations": {}
+                            },
+                            "f:status": {
+                                "f:completionTimestamp": {},
+                                "f:errors": {},
+                                "f:expiration": {},
+                                "f:formatVersion": {},
+                                "f:phase": {},
+                                "f:progress": {
+                                    ".": {},
+                                    "f:itemsBackedUp": {},
+                                    "f:totalItems": {}
+                                },
+                                "f:startTimestamp": {},
+                                "f:version": {}
+                            }
+                        },
+                        "manager": "velero-server",
+                        "operation": "Update",
+                        "time": "2023-07-13T15:47:29Z"
+                    }
+                ],
+                "name": "test-sss-o5er-meraaaa",
+                "namespace": "velero",
+                "resourceVersion": "893490",
+                "uid": "bc5a9a6c-cac4-4378-951a-15a4c295f716"
+            },
+            "spec": {
+                "csiSnapshotTimeout": "10m0s",
+                "defaultVolumesToFsBackup": false,
+                "hooks": {},
+                "includedNamespaces": [
+                    "nginx-csi-test"
+                ],
+                "metadata": {},
+                "snapshotVolumes": true,
+                "storageLocation": "default",
+                "ttl": "720h0m0s",
+                "volumeSnapshotLocations": [
+                    "default"
+                ]
+            },
+            "status": {
+                "completionTimestamp": "2023-07-13T15:47:28Z",
+                "errors": 2,
+                "expiration": "2023-08-12T15:47:27Z",
+                "formatVersion": "1.1.0",
+                "phase": "PartiallyFailed",
+                "progress": {
+                    "itemsBackedUp": 35,
+                    "totalItems": 35
+                },
+                "startTimestamp": "2023-07-13T15:47:27Z",
+                "version": 1
+            }
+        },
+        {
+            "apiVersion": "velero.io/v1",
+            "kind": "Backup",
+            "metadata": {
+                "annotations": {
+                    "velero.io/source-cluster-k8s-gitversion": "v1.26.3",
+                    "velero.io/source-cluster-k8s-major-version": "1",
+                    "velero.io/source-cluster-k8s-minor-version": "26"
+                },
+                "creationTimestamp": "2023-07-13T15:52:53Z",
+                "generation": 6,
+                "labels": {
+                    "velero.io/storage-location": "default"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:spec": {
+                                ".": {},
+                                "f:hooks": {},
+                                "f:includedNamespaces": {},
+                                "f:metadata": {},
+                                "f:snapshotVolumes": {}
+                            },
+                            "f:status": {}
+                        },
+                        "manager": "velero",
+                        "operation": "Update",
+                        "time": "2023-07-13T15:52:53Z"
+                    },
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:velero.io/source-cluster-k8s-gitversion": {},
+                                    "f:velero.io/source-cluster-k8s-major-version": {},
+                                    "f:velero.io/source-cluster-k8s-minor-version": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:velero.io/storage-location": {}
+                                }
+                            },
+                            "f:spec": {
+                                "f:csiSnapshotTimeout": {},
+                                "f:defaultVolumesToFsBackup": {},
+                                "f:storageLocation": {},
+                                "f:ttl": {},
+                                "f:volumeSnapshotLocations": {}
+                            },
+                            "f:status": {
+                                "f:completionTimestamp": {},
+                                "f:csiVolumeSnapshotsAttempted": {},
+                                "f:csiVolumeSnapshotsCompleted": {},
+                                "f:expiration": {},
+                                "f:formatVersion": {},
+                                "f:phase": {},
+                                "f:progress": {
+                                    ".": {},
+                                    "f:itemsBackedUp": {},
+                                    "f:totalItems": {}
+                                },
+                                "f:startTimestamp": {},
+                                "f:version": {}
+                            }
+                        },
+                        "manager": "velero-server",
+                        "operation": "Update",
+                        "time": "2023-07-13T15:53:06Z"
+                    }
+                ],
+                "name": "test-sss-o5er-meraaaaaaaaaa",
+                "namespace": "velero",
+                "resourceVersion": "894200",
+                "uid": "4c580cde-a62e-4494-b5f3-75241f96e22a"
+            },
+            "spec": {
+                "csiSnapshotTimeout": "10m0s",
+                "defaultVolumesToFsBackup": false,
+                "hooks": {},
+                "includedNamespaces": [
+                    "nginx-csi-test"
+                ],
+                "metadata": {},
+                "snapshotVolumes": true,
+                "storageLocation": "default",
+                "ttl": "720h0m0s",
+                "volumeSnapshotLocations": [
+                    "default"
+                ]
+            },
+            "status": {
+                "completionTimestamp": "2023-07-13T15:53:06Z",
+                "csiVolumeSnapshotsAttempted": 2,
+                "csiVolumeSnapshotsCompleted": 2,
+                "expiration": "2023-08-12T15:52:53Z",
+                "formatVersion": "1.1.0",
+                "phase": "Completed",
+                "progress": {
+                    "itemsBackedUp": 40,
+                    "totalItems": 40
+                },
+                "startTimestamp": "2023-07-13T15:52:53Z",
+                "version": 1
+            }
+        },
+        {
+            "apiVersion": "velero.io/v1",
+            "kind": "Backup",
+            "metadata": {
+                "annotations": {
+                    "cc-cluster-id": "64ad2266a7bc2958e2d60178",
+                    "cc-kubebackup-id": "64b00cb512961e70e5c8ae7f",
+                    "cc-kubebackup-name": "test-with-csi",
+                    "cc-reference-resource-namespace": "velero",
+                    "velero.io/source-cluster-k8s-gitversion": "v1.26.3",
+                    "velero.io/source-cluster-k8s-major-version": "1",
+                    "velero.io/source-cluster-k8s-minor-version": "26"
+                },
+                "creationTimestamp": "2023-07-13T14:39:49Z",
+                "generation": 5,
+                "labels": {
+                    "velero.io/storage-location": "default"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:cc-cluster-id": {},
+                                    "f:cc-kubebackup-id": {},
+                                    "f:cc-kubebackup-name": {},
+                                    "f:cc-reference-resource-namespace": {}
+                                }
+                            },
+                            "f:spec": {
+                                ".": {},
+                                "f:excludedNamespaces": {},
+                                "f:includedNamespaces": {},
+                                "f:snapshotVolumes": {},
+                                "f:storageLocation": {},
+                                "f:volumeSnapshotLocations": {}
+                            }
+                        },
+                        "manager": "kubeagent",
+                        "operation": "Update",
+                        "time": "2023-07-13T14:39:49Z"
+                    },
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:velero.io/source-cluster-k8s-gitversion": {},
+                                    "f:velero.io/source-cluster-k8s-major-version": {},
+                                    "f:velero.io/source-cluster-k8s-minor-version": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:velero.io/storage-location": {}
+                                }
+                            },
+                            "f:spec": {
+                                "f:csiSnapshotTimeout": {},
+                                "f:defaultVolumesToFsBackup": {},
+                                "f:ttl": {}
+                            },
+                            "f:status": {
+                                ".": {},
+                                "f:completionTimestamp": {},
+                                "f:expiration": {},
+                                "f:formatVersion": {},
+                                "f:phase": {},
+                                "f:progress": {
+                                    ".": {},
+                                    "f:itemsBackedUp": {},
+                                    "f:totalItems": {}
+                                },
+                                "f:startTimestamp": {},
+                                "f:version": {}
+                            }
+                        },
+                        "manager": "velero-server",
+                        "operation": "Update",
+                        "time": "2023-07-13T14:39:57Z"
+                    }
+                ],
+                "name": "test-with-csi",
+                "namespace": "velero",
+                "resourceVersion": "885539",
+                "uid": "632f4cc3-eeca-448b-813c-beae844802dc"
+            },
+            "spec": {
+                "csiSnapshotTimeout": "10m0s",
+                "defaultVolumesToFsBackup": false,
+                "excludedNamespaces": [
+                    "cloudcasa-io"
+                ],
+                "includedNamespaces": [
+                    "database-application",
+                    "database-auth",
+                    "database-offer"
+                ],
+                "snapshotVolumes": true,
+                "storageLocation": "default",
+                "ttl": "720h0m0s",
+                "volumeSnapshotLocations": [
+                    "default"
+                ]
+            },
+            "status": {
+                "completionTimestamp": "2023-07-13T14:39:57Z",
+                "expiration": "2023-08-12T14:39:49Z",
+                "formatVersion": "1.1.0",
+                "phase": "Completed",
+                "progress": {
+                    "itemsBackedUp": 78,
+                    "totalItems": 78
+                },
+                "startTimestamp": "2023-07-13T14:39:49Z",
+                "version": 1
+            }
+        }
+    ],
+    "kind": "BackupList",
+    "metadata": {
+        "continue": "",
+        "resourceVersion": "1012280"
+    }
+}

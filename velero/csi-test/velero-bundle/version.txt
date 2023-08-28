@@ -1,0 +1,5 @@
+Client:
+	Version: v1.10.1
+	Git commit: 948b3790d5577dc7e77410a8b80ef7d8a6b00303
+Server:
+	Version: v1.10.1

@@ -1,0 +1,35 @@
+Name:         [1mcsi-restore-cliiii[0m
+Namespace:    velero
+Labels:       <none>
+Annotations:  <none>
+
+Phase:                       [32mCompleted[0m
+Total items to be restored:  19
+Items restored:              19
+
+Started:    2023-07-14 04:32:29 -0400 EDT
+Completed:  2023-07-14 04:32:32 -0400 EDT
+Warnings:   <error getting warnings: Get "http://10.108.75.155:9000/velero/restores/csi-restore-cliiii/restore-csi-restore-cliiii-results.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minio%2F20230714%2Fminio%2Fs3%2Faws4_request&X-Amz-Date=20230714T084500Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&X-Amz-Signature=6c1142b4c23d65e5d7b534a51d35d5efc50dadef7ef8bde35e17a60e44192efa": dial tcp 10.108.75.155:9000: i/o timeout>
+
+Errors:  <error getting errors: Get "http://10.108.75.155:9000/velero/restores/csi-restore-cliiii/restore-csi-restore-cliiii-results.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minio%2F20230714%2Fminio%2Fs3%2Faws4_request&X-Amz-Date=20230714T084500Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&X-Amz-Signature=6c1142b4c23d65e5d7b534a51d35d5efc50dadef7ef8bde35e17a60e44192efa": dial tcp 10.108.75.155:9000: i/o timeout>
+
+Backup:  csi-backup-velero-cli
+
+Namespaces:
+  Included:  all namespaces found in the backup
+  Excluded:  <none>
+
+Resources:
+  Included:        *
+  Excluded:        nodes, events, events.events.k8s.io, backups.velero.io, restores.velero.io, resticrepositories.velero.io, csinodes.storage.k8s.io, volumeattachments.storage.k8s.io, backuprepositories.velero.io
+  Cluster-scoped:  auto
+
+Namespace mappings:  <none>
+
+Label selector:  <none>
+
+Restore PVs:  auto
+
+Existing Resource Policy:   <none>
+
+Preserve Service NodePorts:  auto

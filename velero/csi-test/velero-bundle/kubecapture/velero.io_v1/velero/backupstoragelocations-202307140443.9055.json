@@ -1,0 +1,89 @@
+{
+    "apiVersion": "velero.io/v1",
+    "items": [
+        {
+            "apiVersion": "velero.io/v1",
+            "kind": "BackupStorageLocation",
+            "metadata": {
+                "creationTimestamp": "2023-07-13T14:35:42Z",
+                "generation": 2107,
+                "labels": {
+                    "component": "velero"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    ".": {},
+                                    "f:component": {}
+                                }
+                            },
+                            "f:spec": {
+                                ".": {},
+                                "f:config": {
+                                    ".": {},
+                                    "f:region": {},
+                                    "f:s3ForcePathStyle": {},
+                                    "f:s3Url": {}
+                                },
+                                "f:default": {},
+                                "f:objectStorage": {
+                                    ".": {},
+                                    "f:bucket": {}
+                                },
+                                "f:provider": {}
+                            }
+                        },
+                        "manager": "velero",
+                        "operation": "Update",
+                        "time": "2023-07-13T14:35:42Z"
+                    },
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                ".": {},
+                                "f:lastSyncedTime": {},
+                                "f:lastValidationTime": {},
+                                "f:phase": {}
+                            }
+                        },
+                        "manager": "velero-server",
+                        "operation": "Update",
+                        "time": "2023-07-14T08:43:53Z"
+                    }
+                ],
+                "name": "default",
+                "namespace": "velero",
+                "resourceVersion": "1012275",
+                "uid": "40dd21e2-40ce-421c-9966-4f6a8cd40da8"
+            },
+            "spec": {
+                "config": {
+                    "region": "minio",
+                    "s3ForcePathStyle": "true",
+                    "s3Url": "http://10.108.75.155:9000"
+                },
+                "default": true,
+                "objectStorage": {
+                    "bucket": "velero"
+                },
+                "provider": "aws"
+            },
+            "status": {
+                "lastSyncedTime": "2023-07-14T08:43:53Z",
+                "lastValidationTime": "2023-07-14T08:43:41Z",
+                "phase": "Available"
+            }
+        }
+    ],
+    "kind": "BackupStorageLocationList",
+    "metadata": {
+        "continue": "",
+        "resourceVersion": "1012280"
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "apiVersion": "velero.io/v1",
+    "items": [
+        {
+            "apiVersion": "velero.io/v1",
+            "kind": "VolumeSnapshotLocation",
+            "metadata": {
+                "creationTimestamp": "2023-07-13T14:35:42Z",
+                "generation": 1,
+                "labels": {
+                    "component": "velero"
+                },
+                "managedFields": [
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    ".": {},
+                                    "f:component": {}
+                                }
+                            },
+                            "f:spec": {
+                                ".": {},
+                                "f:config": {
+                                    ".": {},
+                                    "f:region": {}
+                                },
+                                "f:provider": {}
+                            }
+                        },
+                        "manager": "velero",
+                        "operation": "Update",
+                        "time": "2023-07-13T14:35:42Z"
+                    }
+                ],
+                "name": "default",
+                "namespace": "velero",
+                "resourceVersion": "885029",
+                "uid": "720fa095-f8f4-4f34-8f40-a617ae131a12"
+            },
+            "spec": {
+                "config": {
+                    "region": "default"
+                },
+                "provider": "aws"
+            }
+        }
+    ],
+    "kind": "VolumeSnapshotLocationList",
+    "metadata": {
+        "continue": "",
+        "resourceVersion": "1012280"
+    }
+}

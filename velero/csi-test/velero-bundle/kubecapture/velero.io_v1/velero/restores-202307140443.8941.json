@@ -1,0 +1,253 @@
+{
+    "apiVersion": "velero.io/v1",
+    "items": [
+        {
+            "apiVersion": "velero.io/v1",
+            "kind": "Restore",
+            "metadata": {
+                "creationTimestamp": "2023-07-13T22:00:35Z",
+                "generation": 5,
+                "managedFields": [
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:spec": {
+                                ".": {},
+                                "f:backupName": {},
+                                "f:hooks": {},
+                                "f:includedNamespaces": {}
+                            },
+                            "f:status": {}
+                        },
+                        "manager": "velero",
+                        "operation": "Update",
+                        "time": "2023-07-13T22:00:35Z"
+                    },
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:spec": {
+                                "f:excludedResources": {}
+                            },
+                            "f:status": {
+                                "f:completionTimestamp": {},
+                                "f:phase": {},
+                                "f:progress": {
+                                    ".": {},
+                                    "f:itemsRestored": {},
+                                    "f:totalItems": {}
+                                },
+                                "f:startTimestamp": {},
+                                "f:warnings": {}
+                            }
+                        },
+                        "manager": "velero-server",
+                        "operation": "Update",
+                        "time": "2023-07-13T22:00:37Z"
+                    }
+                ],
+                "name": "csi-restore-cli",
+                "namespace": "velero",
+                "resourceVersion": "936873",
+                "uid": "a1ece5ee-8879-4fe5-ad04-1101002b8ffb"
+            },
+            "spec": {
+                "backupName": "csi-backup-velero-cli",
+                "excludedResources": [
+                    "nodes",
+                    "events",
+                    "events.events.k8s.io",
+                    "backups.velero.io",
+                    "restores.velero.io",
+                    "resticrepositories.velero.io",
+                    "csinodes.storage.k8s.io",
+                    "volumeattachments.storage.k8s.io",
+                    "backuprepositories.velero.io"
+                ],
+                "hooks": {},
+                "includedNamespaces": [
+                    "*"
+                ]
+            },
+            "status": {
+                "completionTimestamp": "2023-07-13T22:00:37Z",
+                "phase": "Completed",
+                "progress": {
+                    "itemsRestored": 19,
+                    "totalItems": 19
+                },
+                "startTimestamp": "2023-07-13T22:00:35Z",
+                "warnings": 2
+            }
+        },
+        {
+            "apiVersion": "velero.io/v1",
+            "kind": "Restore",
+            "metadata": {
+                "creationTimestamp": "2023-07-14T08:32:29Z",
+                "generation": 5,
+                "managedFields": [
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:spec": {
+                                ".": {},
+                                "f:backupName": {},
+                                "f:hooks": {},
+                                "f:includedNamespaces": {}
+                            },
+                            "f:status": {}
+                        },
+                        "manager": "velero",
+                        "operation": "Update",
+                        "time": "2023-07-14T08:32:29Z"
+                    },
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:spec": {
+                                "f:excludedResources": {}
+                            },
+                            "f:status": {
+                                "f:completionTimestamp": {},
+                                "f:phase": {},
+                                "f:progress": {
+                                    ".": {},
+                                    "f:itemsRestored": {},
+                                    "f:totalItems": {}
+                                },
+                                "f:startTimestamp": {},
+                                "f:warnings": {}
+                            }
+                        },
+                        "manager": "velero-server",
+                        "operation": "Update",
+                        "time": "2023-07-14T08:32:32Z"
+                    }
+                ],
+                "name": "csi-restore-cliiii",
+                "namespace": "velero",
+                "resourceVersion": "1010847",
+                "uid": "6ad3679d-2047-42a4-b7e1-158725759ab0"
+            },
+            "spec": {
+                "backupName": "csi-backup-velero-cli",
+                "excludedResources": [
+                    "nodes",
+                    "events",
+                    "events.events.k8s.io",
+                    "backups.velero.io",
+                    "restores.velero.io",
+                    "resticrepositories.velero.io",
+                    "csinodes.storage.k8s.io",
+                    "volumeattachments.storage.k8s.io",
+                    "backuprepositories.velero.io"
+                ],
+                "hooks": {},
+                "includedNamespaces": [
+                    "*"
+                ]
+            },
+            "status": {
+                "completionTimestamp": "2023-07-14T08:32:32Z",
+                "phase": "Completed",
+                "progress": {
+                    "itemsRestored": 19,
+                    "totalItems": 19
+                },
+                "startTimestamp": "2023-07-14T08:32:29Z",
+                "warnings": 2
+            }
+        },
+        {
+            "apiVersion": "velero.io/v1",
+            "kind": "Restore",
+            "metadata": {
+                "creationTimestamp": "2023-07-13T22:06:17Z",
+                "generation": 5,
+                "managedFields": [
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:spec": {
+                                ".": {},
+                                "f:backupName": {},
+                                "f:excludedNamespaces": {},
+                                "f:preserveNodePorts": {},
+                                "f:restorePVs": {}
+                            }
+                        },
+                        "manager": "kubeagent",
+                        "operation": "Update",
+                        "time": "2023-07-13T22:06:17Z"
+                    },
+                    {
+                        "apiVersion": "velero.io/v1",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:spec": {
+                                "f:excludedResources": {}
+                            },
+                            "f:status": {
+                                ".": {},
+                                "f:completionTimestamp": {},
+                                "f:phase": {},
+                                "f:progress": {
+                                    ".": {},
+                                    "f:itemsRestored": {},
+                                    "f:totalItems": {}
+                                },
+                                "f:startTimestamp": {}
+                            }
+                        },
+                        "manager": "velero-server",
+                        "operation": "Update",
+                        "time": "2023-07-13T22:06:20Z"
+                    }
+                ],
+                "name": "csi-restore-ui",
+                "namespace": "velero",
+                "resourceVersion": "937664",
+                "uid": "fdd09c4f-ec3d-44aa-b8d7-16131a6bbd80"
+            },
+            "spec": {
+                "backupName": "csi-backup-ui",
+                "excludedNamespaces": [
+                    "cloudcasa-io"
+                ],
+                "excludedResources": [
+                    "nodes",
+                    "events",
+                    "events.events.k8s.io",
+                    "backups.velero.io",
+                    "restores.velero.io",
+                    "resticrepositories.velero.io",
+                    "csinodes.storage.k8s.io",
+                    "volumeattachments.storage.k8s.io",
+                    "backuprepositories.velero.io"
+                ],
+                "preserveNodePorts": false,
+                "restorePVs": true
+            },
+            "status": {
+                "completionTimestamp": "2023-07-13T22:06:20Z",
+                "phase": "Completed",
+                "progress": {
+                    "itemsRestored": 16,
+                    "totalItems": 16
+                },
+                "startTimestamp": "2023-07-13T22:06:17Z"
+            }
+        }
+    ],
+    "kind": "RestoreList",
+    "metadata": {
+        "continue": "",
+        "resourceVersion": "1012279"
+    }
+}

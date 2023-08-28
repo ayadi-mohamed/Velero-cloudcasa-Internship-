@@ -1,0 +1,56 @@
+Name:         [1mcsi-backup-velero-cli[0m
+Namespace:    velero
+Labels:       velero.io/storage-location=default
+Annotations:  velero.io/source-cluster-k8s-gitversion=v1.26.3
+              velero.io/source-cluster-k8s-major-version=1
+              velero.io/source-cluster-k8s-minor-version=26
+
+Phase:  [32mCompleted[0m
+
+Errors:    0
+Warnings:  0
+
+Namespaces:
+  Included:  nginx-csi-test
+  Excluded:  <none>
+
+Resources:
+  Included:        *
+  Excluded:        <none>
+  Cluster-scoped:  auto
+
+Label selector:  <none>
+
+Storage Location:  default
+
+Velero-Native Snapshot PVs:  true
+
+TTL:  720h0m0s
+
+CSISnapshotTimeout:  10m0s
+
+Hooks:  <none>
+
+Backup Format Version:  1.1.0
+
+Started:    2023-07-13 17:26:54 -0400 EDT
+Completed:  2023-07-13 17:27:08 -0400 EDT
+
+Expiration:  2023-08-12 17:26:54 -0400 EDT
+
+Total items to be backed up:  25
+Items backed up:              25
+
+Resource List:  <error getting backup resource list: Get "http://10.108.75.155:9000/velero/backups/csi-backup-velero-cli/csi-backup-velero-cli-resource-list.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minio%2F20230714%2Fminio%2Fs3%2Faws4_request&X-Amz-Date=20230714T084359Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&X-Amz-Signature=ae8b684672239b47b238a4c19640521074c1f71efac44b61bd0989925c5a5239": dial tcp 10.108.75.155:9000: i/o timeout>
+
+Velero-Native Snapshots: <none included>
+
+CSI Volume Snapshots:
+Snapshot Content Name: snapcontent-0526c058-b9f2-4848-ad02-6ddcd9b4ff1a
+  Storage Snapshot ID: fe867fc1-21c3-11ee-ade5-d65e4b531f19
+  Snapshot Size (bytes): 1073741824
+  Ready to use: true
+Snapshot Content Name: snapcontent-da61150b-c61b-4fe2-a018-2f793187e117
+  Storage Snapshot ID: 01afeba4-21c4-11ee-81a8-d6d22da07575
+  Snapshot Size (bytes): 1073741824
+  Ready to use: true
